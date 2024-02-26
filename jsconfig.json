@@ -1,7 +1,15 @@
 {
   "compilerOptions": {
+    "baseUrl": "./src/app/",
     "paths": {
-      "@/*": ["./src/*"]
+      "@components/*": [
+        "_components/*",
+        "_components/Slide/*",
+        "_components/Header/*",
+        "_components/InfoBox/*",
+        "_components/Thumbnails/*"
+      ],
+      "@data/*": ["_data/*"]
     }
   }
 }
