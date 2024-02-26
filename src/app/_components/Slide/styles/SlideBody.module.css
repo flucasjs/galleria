@@ -1,0 +1,71 @@
+.body {
+  display: flex;
+  flex-direction: column;
+}
+
+.body__painting-year {
+  font-size: var(--display-size);
+  font-weight: var(--display-weight);
+  line-height: var(--display-line-height);
+  color: hsl(var(--display-hsl));
+  margin-left: auto;
+  margin-bottom: -12px;
+  user-select: none;
+}
+
+.body__painting-description {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 2;
+  color: #7d7d7d;
+  margin-bottom: 40px;
+}
+
+.body__description-source {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: auto;
+  color: #7d7d7d;
+  text-decoration: underline;
+  transition: color 0.15s ease-in-out;
+}
+
+.body__description-source:hover {
+  color: #000;
+}
+
+@media (min-width: 768px) {
+  .body__description-container {
+    align-self: center;
+  }
+  
+  .body__painting-year {
+    font-size: 200px;
+    line-height: 150px;
+    letter-spacing: 0;
+    margin-left: initial;
+    margin-bottom: -75px;
+  }
+  
+  .body__painting-description {
+    margin-bottom: 40px;
+    width: 457px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .body__description-container {
+    align-self: flex-start;
+  }
+  
+  .body__painting-year {
+    margin-left: auto;
+    margin-bottom: -35px;
+  }
+  
+  .body__painting-description {
+    margin-bottom: 193px;
+    width: 350px;
+  }
+}

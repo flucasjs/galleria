@@ -1,0 +1,191 @@
+.media {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: -8px;
+}
+
+.media__hero {
+  position: relative;
+}
+
+.hero__image {
+  height: 280px !important;
+}
+
+.hero__view-button {
+  padding: 14px 16px;
+  background-color: hsl(0, 0%, 0%, 0.75);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 152px;
+  height: 40px;
+  border: none;
+  position: absolute;
+  margin: 16px;
+  cursor: pointer;
+}
+
+.hero__view-button:hover {
+  background-color: hsla(0, 0%, 100%, 0.25);
+}
+
+.view-button__expand-icon {
+  width: 12px;
+  height: 12px;
+  position: relative;
+  pointer-events: none;
+}
+
+.expand-icon__image {
+  object-fit: contain;
+  user-select: none;
+}
+
+.view-button__text {
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: auto;
+  user-select: none;
+  pointer-events: none;
+}
+
+.hero__image {
+  user-select: none;
+  height: auto;
+}
+
+.media__info-box {
+  display: flex;
+  flex-direction: column;
+  margin-top: -16%;
+  position: relative;
+}
+
+.info-box__info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px;
+  row-gap: 8px;
+  background-color: #fff;
+  width: 280px;
+}
+
+.info-box__painting-name {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  color: #000;
+}
+
+.info-box__artist-name {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: auto;
+  color: #7d7d7d;
+}
+
+.info-box__artist-portrait-image {
+  width: 64px;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .media {
+    flex-direction: row;
+    margin-bottom: initial;
+    height: 560px;
+    position: relative;
+    margin-bottom: 64px;
+  }
+
+  .hero__view-button {
+    bottom: 0;
+  }
+
+  .hero__image {
+    width: 475px;
+    height: 560px !important;
+  }
+
+  .media__info-box {
+    margin: initial;
+    width: 440px;
+    height: max-content;
+    position: absolute;
+    right: 0;
+  }
+
+  .info-box__info-container {
+    width: 440px;
+    height: auto;
+    padding: 0 0 62px 62px;
+    row-gap: 24px;
+  }
+
+  .info-box__painting-name {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: 0;
+    margin-bottom: 0;
+  }
+
+  .info-box__artist-name {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: auto;
+    letter-spacing: 0; 
+    margin-bottom: 0;
+  }
+
+  .info-box__artist-portrait-container {
+    align-self: flex-end;
+    margin-right: 12%;
+  }
+
+  .info-box__artist-portrait-image {
+    width: 128px;
+    height: 128px;
+  }
+}
+
+@media (min-width: 768px) {
+  .media {
+    flex-direction: row;
+    margin-bottom: initial;
+    width: 890px;
+    height: 624px;
+    position: relative;
+    margin-bottom: 64px;
+  }
+
+  .media__hero {
+    height: 560px;
+  }
+
+  .media__info-box {
+    width: 440px;
+    height: 624px;
+    right: 5%;
+  }
+
+  .info-box__info-container {
+    width: 445px;
+    padding: 0 0 65px 67px;
+    row-gap: 24px;
+  }
+
+  .info-box__painting-name {
+    width: 75%;
+    line-height: 64px;
+  }
+
+  .info-box__artist-portrait-container {
+    margin-right: 45%;
+    margin-top: auto;
+  }
+}
