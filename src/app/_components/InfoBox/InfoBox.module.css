@@ -1,0 +1,26 @@
+.info {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  padding: 0px 32px 33px;
+  bottom: 0;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.name {
+  color: hsl(var(--heading-light-hsl));
+  font-size: var(--h2-size);
+  font-weight: var(--h2-weight);
+  line-height: var(--h2-line-height);
+  margin-bottom: 7px;
+  max-width: 246px;
+}
+
+.artist {
+  color: hsl(var(--subheading-light-hsl));
+  font-size: var(--subh2-size);
+  font-weight: var(--subh2-weight);
+  line-height: var(--subh2-line-height);
+}
