@@ -49,8 +49,8 @@
 
 @media (min-width: 1440px) {
   .header_outer {
-    width: 1440px;
-    padding: 40px;
+    width: 1330px;
+    padding-block: 40px;
   }
 
   .logo {
@@ -58,7 +58,7 @@
   }
 
   .hr {
-    width: 1360px;
+    width: 1265px;
     margin: 0 auto;
   }
 }
